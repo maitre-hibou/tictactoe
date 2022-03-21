@@ -48,7 +48,7 @@ function andTheWinnerIs(array|string $board): string
         $valuesCount = array_count_values($line);
 
         foreach (array_keys($valuesCount) as $value) {
-            if (!in_array($value, ['X', 'O', ''])) {
+            if (!in_array($value, ['X', 'O', ''], true)) {
                 throw new RuntimeException('An invalid character has been provided. Use only Xs, Os and spaces.');
             }
         }
