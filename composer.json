@@ -1,0 +1,32 @@
+{
+    "name": "maitre-hibou/tictactoe",
+    "description": "Algorythm test for Gogaille job.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "./src/andTheWinnerIs.php"
+        ],
+        "psr-4": {
+            "MaitreHibou\\TicTacToe\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MaitreHibou\\TicTacToe\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arnaud P",
+            "email": "arnaud@xpressive.io"
+        }
+    ],
+    "require": {
+        "symfony/console": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^6.0"
+    }
+}
